@@ -146,11 +146,7 @@ public class LineHeightEditText extends AppCompatEditText {
     /**
      * Adds a TextWatcher to the list of those whose methods are called
      * whenever this TextView's text changes.
-     * <p>
-     * In 1.0, the {@link android.text.TextWatcher#afterTextChanged} method was erroneously
-     * not called after {@link #setText} calls.  Now, doing {@link #setText}
-     * if there are any text changed listeners forces the buffer type to
-     * Editable if it would not otherwise be and does call this method.
+     * @param textWatcher TextWatcher
      */
     public void addTextWatcher(TextWatcher textWatcher) {
         this.textWatcher = textWatcher;

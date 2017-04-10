@@ -35,9 +35,9 @@
         android:lineSpacingExtra="16dp"
         android:text="Hello World!\nHello World!\nHello World!"
         android:textSize="18sp"
-        app:cursorColor="#3766ff"
-        app:cursorHeight="20dp"
-        app:cursorWidth="1dp"/>
+        app:cursorColor="#ff0000"
+        app:cursorHeight="21dp"
+        app:cursorWidth="2dp"/>
 
 
 </FrameLayout>

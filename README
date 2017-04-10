@@ -2,3 +2,19 @@
 
 Fix edittext lineHeight and cursor effect when set lineSpacingExtra or lineSpacingMultiplier
 
+## EditText vs LineHeightEditText
+
+
+## Usage
+
+```xml
+<com.hanks.lineheightedittext.LineHeightEditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:lineSpacingExtra="16dp"
+    android:text="Hello World!\nHello World!\nHello World!"
+    android:textSize="18sp"
+    app:cursorColor="#ff0000"
+    app:cursorHeight="21dp"
+    app:cursorWidth="2dp"/>
+```
