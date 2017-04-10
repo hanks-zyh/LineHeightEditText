@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:text="LineHeightEditText"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#20f0"
+        android:lineSpacingExtra="16dp"
+        android:text="Hello World!\nHello World!\nHello World!"
+        android:textSize="18sp"/>
+
+    <com.hanks.lineheightedittext.LineHeightEditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
+        android:background="#2f00"
+        android:lineSpacingExtra="16dp"
+        android:text="Hello World!\nHello World!\nHello World!"
+        android:textSize="18sp"
+        app:cursorColor="#3766ff"
+        app:cursorHeight="20dp"
+        app:cursorWidth="1dp"/>
+
+
+</FrameLayout>

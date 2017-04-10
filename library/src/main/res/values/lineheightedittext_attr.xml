@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineHeightEditText">
+        <attr name="cursorColor" format="color"/>
+        <attr name="cursorHeight" format="dimension"/>
+        <attr name="cursorWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
