@@ -4,7 +4,7 @@ Fix edittext lineHeight and cursor effect when set lineSpacingExtra or lineSpaci
 
 ## EditText vs LineHeightEditText
 
-![EditText vs LineHeightEditText](https://github.com/hanks-zyh/LineHeightEditText/blob/master/demo.gif)
+![EditText vs LineHeightEditText](https://raw.githubusercontent.com/hanks-zyh/LineHeightEditText/master/demo.gif)
 
 ## Usage
 
