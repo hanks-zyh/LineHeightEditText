@@ -4,8 +4,13 @@ Fix edittext lineHeight and cursor effect when set lineSpacingExtra or lineSpaci
 
 ## EditText vs LineHeightEditText
 
+![EditText vs LineHeightEditText](https://github.com/hanks-zyh/LineHeightEditText/blob/master/demo.gif)
 
 ## Usage
+
+```groovy
+compile 'com.hanks:lineheightedittext-library:1.0'
+```
 
 ```xml
 <com.hanks.lineheightedittext.LineHeightEditText

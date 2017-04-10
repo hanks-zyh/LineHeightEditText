@@ -1,3 +1,18 @@
+/*
+ * Copyright (C) 2017 Hanks
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.hanks.lineheightedittext;
 
 
@@ -41,7 +56,7 @@ public class LineHeightEditText extends AppCompatEditText {
         // init
         TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.LineHeightEditText, defStyleAttr, 0);
-        cursorColor = a.getColor(R.styleable.LineHeightEditText_cursorColor,getColorAccent(context));
+        cursorColor = a.getColor(R.styleable.LineHeightEditText_cursorColor, getColorAccent(context));
         cursorHeight = a.getDimensionPixelSize(R.styleable.LineHeightEditText_cursorHeight, (int) (1.25 * getTextSize()));
         cursorWidth = a.getDimensionPixelSize(R.styleable.LineHeightEditText_cursorWidth, 6);
         a.recycle();
@@ -94,8 +109,8 @@ public class LineHeightEditText extends AppCompatEditText {
             field1.setAccessible(true);
             field2.setAccessible(true);
             Object arr = field2.get(field1.get(this));
-            Array.set(arr, 0, new LineSpaceCursorDrawable(getCursorColor(),getCursorWidth(),getCursorHeight()));
-            Array.set(arr, 1, new LineSpaceCursorDrawable(getCursorColor(),getCursorWidth(),getCursorHeight()));
+            Array.set(arr, 0, new LineSpaceCursorDrawable(getCursorColor(), getCursorWidth(), getCursorHeight()));
+            Array.set(arr, 1, new LineSpaceCursorDrawable(getCursorColor(), getCursorWidth(), getCursorHeight()));
         } catch (Exception ignored) {
         }
     }
@@ -113,10 +128,18 @@ public class LineHeightEditText extends AppCompatEditText {
         }
     }
 
+    public int getCursorColor() {
+        return cursorColor;
+    }
+
     public void setCursorColor(int cursorColor) {
         this.cursorColor = cursorColor;
         setTextCursorDrawable();
         invalidate();
+    }
+
+    public int getCursorHeight() {
+        return cursorHeight;
     }
 
     public void setCursorHeight(int cursorHeight) {
@@ -125,27 +148,20 @@ public class LineHeightEditText extends AppCompatEditText {
         invalidate();
     }
 
+    public int getCursorWidth() {
+        return cursorWidth;
+    }
+
     public void setCursorWidth(int cursorWidth) {
         this.cursorWidth = cursorWidth;
         setTextCursorDrawable();
         invalidate();
     }
 
-    public int getCursorColor() {
-        return cursorColor;
-    }
-
-    public int getCursorHeight() {
-        return cursorHeight;
-    }
-
-    public int getCursorWidth() {
-        return cursorWidth;
-    }
-
     /**
      * Adds a TextWatcher to the list of those whose methods are called
      * whenever this TextView's text changes.
+     *
      * @param textWatcher TextWatcher
      */
     public void addTextWatcher(TextWatcher textWatcher) {
