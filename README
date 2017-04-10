@@ -1,0 +1,4 @@
+# LineHeightEditText
+
+Fix edittext lineHeight and cursor effect when set lineSpacingExtra or lineSpacingMultiplier
+
